@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "TokenHarbor usage",
+    "description": "Shows how much of your TokenHarbor weekly allowance is used. The chip at the sidebar foot draws the paid Pass as the top bar and the free-model pool as the bottom bar; click it for the exact percentages, the reset countdown, and the free model list. The plugin resolves the TOKENHARBOR_API_KEY credential and sends one read-only request to TokenHarbor's allowance endpoint, which spends no tokens and never leaves this machine with your key. It also adds a tokenharbor_usage tool, so you can ask for the same numbers in chat. Turn the plugin off and the chip and the tool disappear; your allowance is unchanged.",
+    "detail": "docs/DETAIL.md"
+  }
+}

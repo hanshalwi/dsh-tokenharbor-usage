@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "TokenHarbor 用量",
+    "description": "显示 TokenHarbor 每周额度的使用情况。侧边栏底部的徽章里，上面一条是付费 Pass，下面一条是免费模型池；点击可查看确切百分比、重置倒计时和免费模型清单。插件会读取 TOKENHARBOR_API_KEY 凭据，并向 TokenHarbor 的额度接口发送一次只读请求：不消耗 token，密钥不会离开本机。插件还会注册一个 tokenharbor_usage 工具，可在对话中询问同样的数字。关闭插件后徽章和工具都会消失，额度不受影响。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

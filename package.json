@@ -1,0 +1,44 @@
+{
+  "name": "dsh-tokenharbor-usage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TokenHarbor weekly allowance in the sidebar: paid Pass and free-model usage.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tokenharbor",
+    "usage",
+    "quota",
+    "sidebar"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "node test/host-tool.mjs && node test/client-render.cjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  }
+}
